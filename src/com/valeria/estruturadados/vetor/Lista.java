@@ -67,9 +67,19 @@ public class Lista<T> {
 		return -1;
 	}
 	
+	public int ultimoIndice(T elemento) {
+		for (int i = this.tamanho-1; i >=0 ; i--) {
+			if (this.elementos[i].equals(elemento)) {
+				return i; 
+			}
+		}
+		return -1;
+	}
+	
 	public boolean contem(T elemento) {
 		return busca(elemento) > -1;
 	}
+	
 	
 	// B G D E F -> posição a ser removida é 1 (elemento G)
 	// 0 1 2 3 4 -> tamanho do vetor é 5
