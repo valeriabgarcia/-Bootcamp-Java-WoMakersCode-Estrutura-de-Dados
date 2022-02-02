@@ -2,8 +2,8 @@ package com.valeria.estruturadados.base;
 
 public class EstruturaEstatica<T> {
 
-	private T[] elementos;
-	private int tamanho;
+	protected T[] elementos;
+	protected int tamanho;
 
 	public EstruturaEstatica(int capacidade) {
 		this.elementos = (T[]) new Object[capacidade]; // solução do livro effective Java
@@ -13,7 +13,11 @@ public class EstruturaEstatica<T> {
 	public EstruturaEstatica() {
 		this(10);
 	}
-
+	
+	public boolean estaVazia()
+	{
+		return this.tamanho == 0; 
+	}
 	protected boolean adiciona(T elemento) {
 		this.aumentaCapacidade();
 		if (this.tamanho < this.elementos.length) {
