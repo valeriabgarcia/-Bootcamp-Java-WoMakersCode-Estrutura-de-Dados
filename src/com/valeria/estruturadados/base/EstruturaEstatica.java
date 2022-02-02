@@ -13,11 +13,11 @@ public class EstruturaEstatica<T> {
 	public EstruturaEstatica() {
 		this(10);
 	}
-	
-	public boolean estaVazia()
-	{
-		return this.tamanho == 0; 
+
+	public boolean estaVazia() {
+		return this.tamanho == 0;
 	}
+
 	protected boolean adiciona(T elemento) {
 		this.aumentaCapacidade();
 		if (this.tamanho < this.elementos.length) {
@@ -44,6 +44,16 @@ public class EstruturaEstatica<T> {
 		this.tamanho++;
 
 		return true;
+	}
+
+	protected void remove(int posicao) {
+		if (!(posicao >= 0 && posicao < tamanho)) {
+			throw new IllegalArgumentException("Posicao invaalida");
+		}
+		for (int i = posicao; i < tamanho - 1; i++) {
+			elementos[i] = elementos[i + 1];
+		}
+		tamanho--;
 	}
 
 	private void aumentaCapacidade() {
