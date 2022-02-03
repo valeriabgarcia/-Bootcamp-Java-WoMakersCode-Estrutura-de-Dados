@@ -30,8 +30,8 @@ public class EstruturaEstatica<T> {
 
 	protected boolean adiciona(int posicao, T elemento) {
 
-		if (!(posicao >= 0 && posicao < tamanho)) {
-			throw new IllegalArgumentException("posição inválida");
+		if (posicao < 0 || posicao > tamanho){
+			throw new IllegalArgumentException("Posição inválida");
 		}
 
 		this.aumentaCapacidade();
