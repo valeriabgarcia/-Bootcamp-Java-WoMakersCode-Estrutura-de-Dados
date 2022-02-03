@@ -1,5 +1,6 @@
 ## Estrutura de Dados com Java
-Curso Loiane Groner
+
+Curso ministrado por Loiane Groner
 
 Disponível em: https://loiane.training/curso/estrutura-de-dados
 
