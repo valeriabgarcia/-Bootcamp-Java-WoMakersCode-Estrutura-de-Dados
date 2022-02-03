@@ -1,6 +1,6 @@
 package com.valeria.estruturadados.fila.teste;
 
-public class Paciente implements Comparable<Paciente> {
+public class Paciente{// implements Comparable<Paciente> {
 
 	private String nome;
 	private int prioridade;
@@ -31,6 +31,7 @@ public class Paciente implements Comparable<Paciente> {
 		this.prioridade = prioridade;
 	}
 
+	/*
 	@Override
 	public int compareTo(Paciente o) {
 
@@ -44,7 +45,7 @@ public class Paciente implements Comparable<Paciente> {
 		}
 
 		return 0;
-	}
+	}*/
 
 	@Override
 	public String toString() {
