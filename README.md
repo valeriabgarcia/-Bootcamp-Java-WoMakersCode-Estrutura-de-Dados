@@ -1,10 +1,10 @@
-## Estrutura de Dados com Java
+# Estrutura de Dados com Java
 
 Curso ministrado por Loiane Groner
 
 Disponível em: https://loiane.training/curso/estrutura-de-dados
 
-### Vetores, Arrays e Listas
+## Vetores, Arrays e Listas
 
 Aula 01 - Introdução a Estrutura de Dados e Algoritmos✅
 
@@ -44,7 +44,7 @@ Exer 06 Contatos – Lista✅
 
 Exer 07 Contatos – ArrayList✅
 
-### Pilhas
+## Pilhas
 
 Aula 13-Pilhas: Introdução✅
 
@@ -74,7 +74,7 @@ Exerc 07 Desafio conversão decimal-binário✅
 
 Exerc 08 Desafio Torre de Hanoi✅
 
-### Filas
+## Filas
 
 Aula 19 Filas: Introdução✅
 
